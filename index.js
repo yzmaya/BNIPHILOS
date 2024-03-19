@@ -54,18 +54,11 @@ botonCerrar.addEventListener("click", async (e) => {
 });
 
 
-
-
-
-
 window.addEventListener("DOMContentLoaded", async (e) => {
   // const querySnapshot = await getTasks();
   // querySnapshot.forEach((doc) => {
   //   console.log(doc.data());
   // });
-
-
-
 
   const docu = await getTasking();
   const task = docu.data().name;
@@ -74,8 +67,6 @@ window.addEventListener("DOMContentLoaded", async (e) => {
 
   const inputString = docu.id
   const outputString1 = inputString.slice(1, 4);
-
-
 
   document.getElementById('nombre').innerHTML = task;
   document.getElementById('nombre2').innerHTML = task;
